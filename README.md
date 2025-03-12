@@ -1,5 +1,11 @@
 # mithril.js starter
 
+- clone
+- `bun install`
+- `bun run dev`
+
+## example component
+
 ```tsx
 import m from "mithril";
 import { signal, computed, effect } from "@preact/signals";
@@ -52,3 +58,5 @@ export default {
   },
 };
 ```
+
+## enjoy
