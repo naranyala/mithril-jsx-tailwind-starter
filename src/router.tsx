@@ -1,6 +1,6 @@
 import "./style.css";
 import m from "mithril";
-// import { div } from "./layouts/default";
+import Layout from "./layouts/default";
 
 // Error Boundary Component
 const ErrorBoundary = {
@@ -12,7 +12,7 @@ const ErrorBoundary = {
 	view(vnode) {
 		if (this.error) {
 			return (
-				<div>
+				<Layout>
 					<div class="min-h-screen p-8 bg-red-50">
 						<div class="max-w-3xl mx-auto">
 							<h1 class="text-2xl font-bold text-red-700 mb-4">
@@ -37,7 +37,7 @@ const ErrorBoundary = {
 							</div>
 						</div>
 					</div>
-				</div>
+				</Layout>
 			);
 		}
 		return vnode.children;
@@ -123,11 +123,11 @@ for (const path in modules) {
 tempRoutes["/:404..."] = {
 	view: () => (
 		<ErrorBoundary>
-			<div>
-				<div className="mt-24 lg:mt-12 pt-24 lg:pt-12">
+			<Layout>
+				<div className="m-0 p-0">
 					<h1 className="text-center font-bold text-3xl"> 404 Not Found</h1>
 				</div>
-			</div>
+			</Layout>
 		</ErrorBoundary>
 	),
 };
