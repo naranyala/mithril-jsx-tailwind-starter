@@ -1,0 +1,24 @@
+{
+  "name": "mithril-jsx-tailwind-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.0.1",
+    "@tailwindcss/vite": "^4.0.13",
+    "clsx": "^2.1.1",
+    "mithril": "^2.2.14",
+    "mitt": "^3.0.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.13"
+  }
+}
